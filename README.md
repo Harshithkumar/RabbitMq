@@ -68,6 +68,6 @@ This project demonstrates a simple setup of a RabbitMQ producer and consumer usi
     docker-compose down
 
 ## Acknowledgments
-   Pika Library
-   RabbitMQ
-   Docker
+   1. Pika Library
+   2. RabbitMQ
+   3. Docker
