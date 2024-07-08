@@ -41,33 +41,31 @@ This project demonstrates a simple setup of a RabbitMQ producer and consumer usi
 ## Setup
 1. **Clone the Repository**
 
-   ```sh
+   ```
    git clone <repository_url>
    cd <repository_directory>
-
-## Usage
-1. Start the Services
+   ```
+2. **Usage**
+   Start the Services
    Start RabbitMQ, producer, and consumer services using Docker Compose:
-   ```sh
-   docker-compose up -d
-3. Access RabbitMQ Management Interface
-   ```sh
-   Username: guest
-   Password: guest
-5. Check Logs
-   ```sh
-   docker-compose logs -f producer
-   docker-compose logs -f consumer
-
+     ```
+     docker-compose up -d
+     ```
+3.  **Access RabbitMQ Management Interface**
+    ```
+    Username: guest
+    Password: guest
+    ```
+4.  **Check Logs**
+     ```
+     docker-compose logs -f producer
+     docker-compose logs -f consumer
+      ```
 ## Dependencies
-    ```sh
+   ```
     pip install -r requirements.txt
-
+   ```
 ## Cleaning Up
-    ```sh
-    docker-compose down
-
-## Acknowledgments
-   1. Pika Library
-   2. RabbitMQ
-   3. Docker
+```commandline
+docker-compose down
+```
