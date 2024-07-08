@@ -10,12 +10,12 @@ This project demonstrates a simple setup of a RabbitMQ producer and consumer usi
 
 ## Project Structure
 .
-├── docker-compose.yml
-├── producer.py
-├── consumer.py
-├── Dockerfile
-├── requirements.txt
-└── README.md
+|__ docker-compose.yml
+|__ producer.py
+|__ consumer.py
+|__ Dockerfile
+|__ requirements.txt
+|__ README.md
 
 
 ## Setup
@@ -29,19 +29,24 @@ This project demonstrates a simple setup of a RabbitMQ producer and consumer usi
 ## Usage
 1. Start the Services
    Start RabbitMQ, producer, and consumer services using Docker Compose:
+   ```sh
    _docker-compose up -d_
-2. Access RabbitMQ Management Interface
+3. Access RabbitMQ Management Interface
+   ```sh
    _Username: guest
    Password: guest_
-3. Check Logs
+5. Check Logs
+   ```sh
    _docker-compose logs -f producer
    docker-compose logs -f consumer_
 
 ## Dependencies
-pip install -r requirements.txt
+    ```sh
+    pip install -r requirements.txt
 
 ## Cleaning Up
-docker-compose down
+    ```sh
+    docker-compose down
 
 ## Acknowledgments
    Pika Library
