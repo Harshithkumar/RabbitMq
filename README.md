@@ -10,28 +10,32 @@ This project demonstrates a simple setup of a RabbitMQ producer and consumer usi
 
 ## Project Structure
 .
+
 |__ docker-compose.yml
+
 |__ producer.py
+
 |__ consumer.py
+
 |__ Dockerfile
+
 |__ requirements.txt
+
 |__ README.md
 
 ## Scripts
-   Producer
+   Producer:
       The producer.py script sends a message to RabbitMQ every 5 seconds. Each message contains a UUID and a timestamp.
 
-   Consumer
+   Consumer:
       The consumer.py script receives messages from RabbitMQ and logs them.
 
-   Dockerfile
+   Dockerfile:
       The Dockerfile sets up the environment for running the producer and consumer scripts.
 
-   Configuration
+   Configuration:
       You can configure the message sending interval in producer.py:
 
-      python
-      Copy code
       MESSAGE_INTERVAL = 5  # Time in seconds
 
 ## Setup
